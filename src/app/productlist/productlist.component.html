@@ -1,0 +1,74 @@
+
+ <div class="container ">
+<div class="row row-cols-4 ">
+    <div *ngFor='let product of products'>
+  <div class="col" >
+    
+
+        <div class="flip-container">
+            <div class="flipper">
+                <div class="front">
+        <img id="img" src="{{product.image}}" class="card-img-top" alt="..." >
+
+         <div class="card-body">
+         <p id="font-style" class="card-title">{{product.title}}</p>
+         <small id="rate">{{product.rating.rate}}<img src="../../assets/Uploads/rating.jpg" width="13%" height="12%"/></small>
+<small><img src="../../assets/Uploads/rupee.jpg" width="11px" height="11px" alt="">{{product.price}}</small>
+          </div></div>
+          <div class="back">
+            <!-- <div id="rate">{{product.category}}</div> -->
+          <p class="back-text">{{product.description}}</p>
+         </div></div>
+    
+</div>
+</div>
+</div>
+</div>
+
+        <div  class=" crd-alg row row-cols-2  ">
+
+            <div class="col"> 
+                <div data-aos="flip-left" >
+             <a href="">   <img id="img-prd" src="../../assets/Uploads/elec.webp" class="card-img-top" alt="..."></a>
+                <div class="">
+                 <h5 class="card-title">Home appliances</h5>
+                  <!-- <p class="card-text">Frontend developers work on the visual elements of a website. They work on the aspects that users interact with. So, they work on the client-side.</p> -->
+                </div>
+             
+            </div></div>
+            <div  class="col">
+            <div data-aos="flip-left" >
+              
+                  <img  id="img-prd"  src="../../assets/Uploads/sofa.webp"  class="card-img-top" alt="...">
+                  <div class="">
+                    <h5 class="card-title">Furniture</h5>
+                  
+                  </div>
+       
+              </div></div>
+              <div class="col ">
+              <div data-aos="flip-right" >
+
+                
+                  <img id="img-prd"  src="../../assets/Uploads/makeup.jpg"  class="card-img-top" alt="...">
+                  <div class="">
+                    <h5 class="card-title">Beauty products</h5>
+                  </div>
+       
+              </div></div>
+              <div class="col">
+              <div data-aos="flip-left" class="col">
+              
+                  <img id="img-prd"  src="../../assets/Uploads/sh.jpg"  class="card-img-top" alt="...">
+                  <div class="">
+                    <h5 class="card-title">Shoes</h5>
+                  
+    
+                </div>
+              </div></div>
+              </div>
+
+
+
+ 
+  
